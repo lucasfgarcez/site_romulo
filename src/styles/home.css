@@ -214,6 +214,7 @@
 @media screen and (max-width: 480px) {
     .sobre-foto img {
         max-width: 90%;
+        align-items: center;
         height: auto;
     }
 
@@ -228,6 +229,7 @@
 
     .especialidades-card {
         max-width: 80%;
+        align-items: center;
     }
 
     .cta-btn a {
