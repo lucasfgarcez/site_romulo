@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('home.css');
+
+* {
+    font-family: "Google Sans", sans-serif;
+    background-color: #222222;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222222;
+    z-index: 1000;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+#nav-bar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 0;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#nav-bar a:hover {
+    color:#fff01c;
+}
+
+main {
+    flex: 1;
+    margin: 0;
+}
+
+section {
+    margin-bottom: 30px;
+    scroll-margin-top: 90px;
+}
+
+footer {
+    margin-top: 30px;
+    justify-items: center;
+}
+
+footer p {
+    margin: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 650px) {
+    #nav-bar {
+        display: flex;
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    #nav-bar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        padding-top: 120px;
+    }
+
+    section {
+        scroll-margin-top: 120px;
+    }
+
+    #nav-bar {
+        padding: 30px;
+    }
+}

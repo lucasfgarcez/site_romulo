@@ -1,0 +1,239 @@
+#sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    gap: 20px;
+    width: 95%;
+}
+
+.sobre-foto img {
+    display: flex;
+    width: 470px;
+    height: auto;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+#sobre-text p {
+    text-align: justify;
+    font-size: 20px;
+    word-spacing: 6px;
+}
+
+#sobre-text h2 {
+    margin: 30px 0 10px 0;
+}
+
+#sobre-text span {
+    background-color: #fff01c;
+    color: black;
+}
+
+#resultados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.resultados-imagens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.resultados-imagens img {
+    height: 600px;
+    width: auto;
+    border-radius: 10px;
+}
+
+#especialidades {
+    justify-self: center;
+    align-items: center;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.especialidades-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.especialidades-card {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(70, 70, 70, 0.2);
+    overflow: hidden;
+    background-color: #fff01c;
+}
+
+.especialidades-card img {
+    width: 100%;
+    height: auto;
+}
+
+.especialidades-texto {
+    text-align: justify;
+    font-size: 18px;
+    word-spacing: 6px;
+    padding: 20px;
+    gap: 20px;
+    height: 100%;
+    background-color: #3d3d3d;
+}
+
+.especialidades-texto p,
+.especialidades-texto h2 {
+    background-color: #3d3d3d;
+    margin-bottom: 20px;
+}
+
+#planos {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.planos-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.planos-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(70, 70, 70, 0.2);
+    overflow: hidden;
+    background-color: #3d3d3d;
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.planos-card h2,
+.planos-card p,
+.planos-card span {
+    background-color: #3d3d3d;
+    margin: 0 0 20px 0;
+}
+
+.planos-card h2,
+.planos-card span {
+    color: #fff01c;
+}
+
+.planos-card span {
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#faca-parte {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#sobre .cta-btn {
+    margin-top: 40px;
+    justify-self: center;
+}
+
+.cta-btn {
+    margin: 10px;
+}
+
+.cta-btn a {
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff01c;
+    font-size: 30px;
+    border-radius: 14px;
+    padding: 14px;
+    color: black;
+    font-weight: 700;
+}
+
+.cta-btn i {
+    background-color: #fff01c;
+    color: black;
+}
+
+@media screen and (max-width: 1190px) {
+    .resultados-imagens {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #sobre {
+        flex-direction: column;
+    }
+
+    #sobre-text {
+        justify-items: center;
+    }
+
+    .especialidades-cards {
+        flex-direction: column;
+    }
+
+    .planos-card {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sobre-foto img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    #sobre-text {
+        flex-direction: column;
+        align-self: center;
+        width: 95%;
+    }
+
+    .resultados-imagens img {
+        width: 90%;
+        height: auto;
+    }
+
+    .especialidades-cards {
+        align-items: center;
+    }
+
+    .especialidades-card {
+        width: 95%;
+    }
+
+    .cta-btn a {
+        font-size: 22px;
+    }
+
+    #faca-parte {
+        text-align: center;
+    }
+}
