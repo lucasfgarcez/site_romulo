@@ -64,6 +64,8 @@ footer {
     flex-direction: column;
     margin-top: 30px;
     justify-items: center;
+    align-items: center;
+    text-align: center;
 }
 
 footer p {

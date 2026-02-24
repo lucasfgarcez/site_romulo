@@ -188,7 +188,9 @@
 
 @media screen and (max-width: 850px) {
     #sobre {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         padding: 0 15px 0 15px;
     }
 
