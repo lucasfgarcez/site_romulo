@@ -90,7 +90,6 @@ footer a {
         justify-content: center;
         gap: 20px;
         padding: 0;
-        gap: 12px;
     }
 }
 
@@ -100,6 +99,7 @@ footer a {
     }
 
     section {
+
         scroll-margin-top: 120px;
     }
 
