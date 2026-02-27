@@ -11,7 +11,7 @@
     height: 300px;
     font-size: 32px;
 
-    background-image: url('/src/images/image0.jpg');
+    background-image: url('../images/image0.jpg');
     background-size: cover;
     background-position: center -90px;
     background-repeat: no-repeat;
