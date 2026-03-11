@@ -93,6 +93,33 @@
     color: black;
 }
 
+.contatos {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.cta-btn a, .contatos a {
+    /* width: 300px; */
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff01c;
+    font-size: 30px;
+    border-radius: 14px;
+    padding: 14px;
+    color: black;
+    font-weight: 700;
+}
+
+.contatos i {
+    background-color: #fff01c;
+    color: black;
+}
+
 #resultados {
     display: flex;
     flex-direction: column;
@@ -111,6 +138,10 @@
     height: 600px;
     width: auto;
     border-radius: 10px;
+}
+
+#resultados .cta-btn {
+    margin: 10px;
 }
 
 #especialidades {
@@ -172,41 +203,102 @@
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    margin-top: 1.2rem;
 }
 
 .planos-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 250px;
-    height: 350px;
-    text-align: center;
+    width: 350px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(70, 70, 70, 0.2);
-    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(70,70,70,0.2);
     background-color: #3d3d3d;
-    padding: 20px;
-    font-size: 20px;
+    padding: 30px;
+    gap: 1.5rem;
     position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.planos-card h2,
-.planos-card p,
-.planos-card span {
-    background-color: #3d3d3d;
-    margin: 0 0 20px 0;
+.planos-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.3);
 }
 
-.planos-card h2,
-.planos-card span {
+.planos-card.destaque {
+    border: 2px solid #fff01c;
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.badge {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    background: #fff01c !important;
+    color: #000;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+.planos-card h2:nth-of-type(2) {
+    font-size: 2rem;
+}
+
+.planos-card p {
+    font-size: 1rem;
+}
+
+.planos-card * {
+    background-color: transparent;
+}
+
+.planos-card h2 {
     color: #fff01c;
 }
 
 .planos-card span {
-    position: absolute;
-    bottom: 0;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.planos-card > h2,
+.planos-card > p {
+    text-align: center;
+}
+
+.planos-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.planos-card li {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    align-items: start;
+    gap: 12px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.planos-card li i {
+    font-size: 18px;
+    text-align: center;
+}
+
+.planos-card i {
+    color: #99d1ff;
 }
 
 #faca-parte {
@@ -217,31 +309,11 @@
     gap: 20px;
 }
 
-#sobre .cta-btn {
-    margin-top: 40px;
-    justify-self: center;
-}
-
-.cta-btn {
-    margin: 10px;
-}
-
-.cta-btn a {
-    width: 300px;
-    text-align: center;
-    text-decoration: none;
-    background-color: #fff01c;
-    font-size: 30px;
-    border-radius: 14px;
-    padding: 14px;
-    color: black;
-    font-weight: 700;
-}
-
-.cta-btn i {
-    background-color: #fff01c;
+#faca-parte .cta-btn i {
+    background: none;
     color: black;
 }
+
 
 @media screen and (max-width: 1190px) {
     .resultados-imagens {
