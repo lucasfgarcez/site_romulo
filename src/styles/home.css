@@ -201,6 +201,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 30px;
+    row-gap: 50px;
     flex-wrap: wrap;
     margin-top: 1.2rem;
     margin-bottom: 2rem;
@@ -230,23 +231,39 @@
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
+.planos-card.destaque-sec {
+    border: 2px solid #0066ff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
 .badge {
     position: absolute;
     top: -16px;
     left: 50%;
     transform: translateX(-50%);
-    
     background: #fff01c !important;
     color: #000;
-
     font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 1px;
-
     padding: 8px 18px;
-
     border-radius: 30px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
 
+.badge-sec {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0066ff !important;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 8px 18px;
+    border-radius: 30px;
     box-shadow: 0 6px 14px rgba(0,0,0,0.3);
 }
 
@@ -307,6 +324,15 @@
     justify-self: center;
     align-items: center;
     gap: 20px;
+}
+
+.planos-card .cta-btn * {
+    font-size: 1.2rem;
+}
+
+.planos-card .cta-btn {
+    align-self: center;
+    margin-top: auto;
 }
 
 .cta-btn i {
