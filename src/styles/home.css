@@ -204,7 +204,7 @@
     row-gap: 50px;
     flex-wrap: wrap;
     margin-top: 1.2rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 .planos-card {
@@ -283,7 +283,7 @@
     color: #fff01c;
 }
 
-.planos-card span {
+.planos-card h2 span {
     font-size: 0.9rem;
     opacity: 0.8;
 }
@@ -346,11 +346,6 @@
     align-items: center;
     gap: 20px;
 }
-
-/* #consultorias .planos-cards {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-} */
 
 
 @media screen and (max-width: 1190px) {
