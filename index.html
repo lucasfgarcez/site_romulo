@@ -7,7 +7,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
+
       gtag('config', 'G-BP7HJHX06J');
     </script>
     <meta charset="UTF-8">
@@ -15,42 +15,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rômulo Martins Personal Trainer | Treinamento Personalizado</title>
     <link rel="stylesheet" href="src/styles/base.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" href="/favicon.ico">
 </head>
 <body>
     <header>
-        <nav id="nav-bar">
+        <nav id="nav-bar" aria-label="Navegação principal">
             <ul>
-                <li><a href=#sobre>Sobre</a></li>
-                <li><a href=#resultados>Resultados</a></li>
-                <li><a href=#especialidades>Especialidades</a></li>
-                <li><a href=#planos>Planos</a></li>
-                <li><a href=#consultorias>Consultorias</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#consultorias">Consultorias</a></li>
+                <li><a href="#perguntas-frequentes">Perguntas Frequentes</a></li>
             </ul>
         </nav>
-        
     </header>
+
     <main>
-        <div id="main-title">
+        <section id="main-title" class="hero">
             <h1 class="oswald-medium">
-                <span class="initial">R</span><span class="oswald-light">OMULO</span> 
+                <span class="initial">R</span><span class="oswald-light">OMULO</span>
                 <span class="initial">M</span><span class="oswald-light">ARTINS</span>
             </h1>
-        </div>
-        
-        <section id="sobre">
+        </section>
+
+        <section id="sobre" class="section-shell">
             <div class="sobre-foto">
-                <img src="src/images/image1.jpeg">
+                <img src="src/images/image1.jpeg" alt="Rômulo Martins, personal trainer">
             </div>
-            <div id="sobre-text">
+            <div class="sobre-content">
                 <h2>Quem <span>sou eu</span></h2>
                 <p>
-                    Olá, sou Rômulo Martins, personal trainer em São Paulo (SP), apaixonado 
-                    por musculação e corrida e com mais de 10 anos de experiência. Trabalho 
-                    com treinamento personalizado para hipertrofia, emagrecimento, treinamento 
-                    funcional e fortalecimento para corrida, além de atuar na reabilitação de 
-                    lesões e doenças osteomusculares, ajudando alunos a treinarem com segurança 
+                    Olá, sou Rômulo Martins, personal trainer em São Paulo (SP), apaixonado
+                    por musculação e corrida e com mais de 10 anos de experiência. Trabalho
+                    com treinamento personalizado para hipertrofia, emagrecimento, treinamento
+                    funcional e fortalecimento para corrida, além de atuar na reabilitação de
+                    lesões e doenças osteomusculares, ajudando alunos a treinarem com segurança
                     e alcançarem seus objetivos.
                 </p>
                 <h2>Minha <span>missão</span></h2>
@@ -65,102 +66,126 @@
                     Formado em educação física, com pós-graduações nas áreas de lesões osteomusculares, bases
                     fisiológicas do treinamento, psicomotricidade e nutrição esportiva.
                 </p>
-                
+
                 <div class="contatos">
-                    <a href="https://www.instagram.com/romulomartinspersonal/" target="_blank">
+                    <a href="https://www.instagram.com/romulomartinspersonal/" target="_blank" rel="noreferrer" aria-label="Instagram de Rômulo Martins">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://wa.me/5511964618676" target="_blank">
+                    <a href="https://wa.me/5511964618676" target="_blank" rel="noreferrer" aria-label="WhatsApp de Rômulo Martins">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
-                    <div class="cta-btn">
-                        <a href="#planos">
-                            Quero conhecer!
-                        </a>
-                    </div>
+                    <a class="cta-btn" href="#planos">Quero conhecer!</a>
                 </div>
             </div>
         </section>
 
-        <section id="resultados">
+        <section id="resultados" class="section-shell section-center">
             <h1>Resultados dos Fofos</h1>
             <div class="resultados-imagens">
-                <img src="src/images/resultados1.jpeg">
-                <img src="src/images/resultados2.jpeg">
+                <div class="resultados-imagem">
+                    <img src="src/images/resultados1.jpeg" alt="Resultado de aluna atendida por Rômulo Martins">
+                </div>
+                <div class="resultados-imagem">
+                    <img src="src/images/resultados2.jpeg" alt="Resultado de aluno atendido por Rômulo Martins">
+                </div>
             </div>
-            <div class="cta-btn">
-                <a href="#planos">
-                    Quero resultados assim!
-                </a>
-            </div>
+            <a class="cta-btn" href="#planos">Quero resultados assim!</a>
         </section>
 
-        <section id="especialidades">
+        <section id="especialidades" class="section-shell section-center">
             <h1>Especialidades</h1>
             <div class="especialidades-cards">
-                <div class="especialidades-card">
-                    <img src="src/images/image2.jpeg" alt="">
-                    <div class="especialidades-texto">
-                        <h2>Acompanhamento Presencial</h2>
-                        <p>
-                            O acompanhamento presencial é ideal para quem busca máxima performance 
-                            e segurança, com supervisão direta em cada exercício. Durante as aulas,
-                            garanto a execução correta dos movimentos, ajustes em tempo real e o
-                            estímulo necessário para potencializar seus resultados, sempre respeitando
-                            seu corpo e seus objetivos.
-                        </p>
+                <article class="especialidades-card">
+                    <div class="especialidades-resumo">
+                        <div class="especialidades-media">
+                            <img src="src/images/image2.jpeg" alt="Treinamento presencial personalizado">
+                        </div>
+                        <div class="especialidades-overlay">
+                            <h2 class="especialidades-titulo-longo">Treinamento presencial personalizado</h2>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="especialidades-card">
-                    <img src="src/images/image3.jpeg" alt="">
                     <div class="especialidades-texto">
-                        <h2>Consultoria Online</h2>
-                        <p>
-                            A consultoria online é um acompanhamento completo, pensado para quem
-                            busca resultados reais, com treinos personalizados e ajustados à sua
-                            individualidade biológica.<br>
-                            Você recebe treinos montados exclusivamente por mim, focados nos seus
-                            objetivos, para serem realizados ao longo de um período de até 2 meses.
-                            Durante esse tempo, o planejamento respeita sua adaptação, evolução e
-                            rotina, seguindo o meu método de trabalho.
-                        </p>
+                        <p>Aulas com supervisão direta para garantir execução correta dos exercícios e melhor desempenho.</p>
                     </div>
-                </div>
+                </article>
+
+                <article class="especialidades-card">
+                    <div class="especialidades-resumo">
+                        <div class="especialidades-media"></div>
+                        <div class="especialidades-overlay">
+                            <h2 class="especialidades-titulo-longo">Correção técnica e ajustes em tempo real</h2>
+                        </div>
+                    </div>
+                    <div class="especialidades-texto">
+                        <p>Monitoramento constante da execução dos movimentos, prevenindo erros e reduzindo risco de lesões.</p>
+                    </div>
+                </article>
+
+                <article class="especialidades-card">
+                    <div class="especialidades-resumo">
+                        <div class="especialidades-media"></div>
+                        <div class="especialidades-overlay">
+                            <h2>Treinos personalizados por objetivo</h2>
+                        </div>
+                    </div>
+                    <div class="especialidades-texto">
+                        <p>Planejamento individual considerando metas, nível de condicionamento e características do aluno.</p>
+                    </div>
+                </article>
+
+                <article class="especialidades-card">
+                    <div class="especialidades-resumo">
+                        <div class="especialidades-media"></div>
+                        <div class="especialidades-overlay">
+                            <h2 class="especialidades-titulo-longo">Consultoria online com acompanhamento estruturado</h2>
+                        </div>
+                    </div>
+                    <div class="especialidades-texto">
+                        <p>Programação de treinos para até 2 meses, adaptada à rotina e evolução do aluno.</p>
+                    </div>
+                </article>
+
+                <article class="especialidades-card">
+                    <div class="especialidades-resumo">
+                        <div class="especialidades-media">
+                            <img src="src/images/image3.jpeg" alt="Método de treino baseado em evolução progressiva">
+                        </div>
+                        <div class="especialidades-overlay">
+                            <h2 class="especialidades-titulo-longo">Método de treino baseado em evolução progressiva</h2>
+                        </div>
+                    </div>
+                    <div class="especialidades-texto">
+                        <p>Ajustes no planejamento conforme adaptação e progresso ao longo do período de treinamento.</p>
+                    </div>
+                </article>
             </div>
         </section>
 
-        <section id="planos">
+        <section id="planos" class="section-shell section-center">
             <h1>Planos</h1>
             <div class="planos-cards">
-                <div class="planos-card">
+                <article class="planos-card">
                     <h2>Fofo START</h2>
-                    <p>
-                        Para quem quer iniciar com orientação profissional e segurança.
-                    </p>
+                    <p>Para quem quer iniciar com orientação profissional e segurança.</p>
                     <h2>R$ 800,00<span>/mês</span></h2>
 
                     <ul>
                         <li><i class="fa-solid fa-dumbbell"></i> 2 treinos presenciais semanais</li>
-                        <li><i class="fa-solid fa-weight-scale"></i> Avaliação  inicial (por fotos ou avaliação postural)</li>
+                        <li><i class="fa-solid fa-weight-scale"></i> Avaliação inicial (por fotos ou avaliação postural)</li>
                         <li><i class="fa-solid fa-clipboard-list"></i> Treino individualizado</li>
                         <li><i class="fa-solid fa-calendar-day"></i> Ajustes mensais de treino</li>
                         <li><i class="fa-solid fa-utensils"></i> Acompanhamento nutricional com retorno mensal</li>
                     </ul>
 
-                    <div class="cta-btn">
-                        <a href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20plano%20START!" target="_blank">
-                            Quero ser START!
-                        </a>
-                    </div>
-                </div>
+                    <a class="cta-btn" href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20plano%20START!" target="_blank" rel="noreferrer">
+                        Quero ser START!
+                    </a>
+                </article>
 
-                <div class="planos-card destaque">
-                    <div class="badge">Mais escolhido</div>
+                <article class="planos-card card-highlight card-highlight-primary">
+                    <span class="card-badge card-badge-primary">Mais escolhido</span>
                     <h2>Fofo STRONG</h2>
-                    <p>
-                        Para quem busca evolução contínua e acompanhamento mais próximo.
-                    </p>
+                    <p>Para quem busca evolução contínua e acompanhamento mais próximo.</p>
                     <h2>R$ 1.200,00<span>/mês</span></h2>
                     <p>Inclui tudo do Fofo START +</p>
 
@@ -172,19 +197,15 @@
                         <li><i class="fa-solid fa-comments"></i> Suporte via WhatsApp (horário comercial)</li>
                     </ul>
 
-                    <div class="cta-btn">
-                        <a href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20plano%20STRONG!" target="_blank">
-                            Quero ser STRONG!
-                        </a>
-                    </div>
-                </div>
+                    <a class="cta-btn" href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20plano%20STRONG!" target="_blank" rel="noreferrer">
+                        Quero ser STRONG!
+                    </a>
+                </article>
 
-                <div class="planos-card destaque-sec">
-                    <div class="badge-sec">Recomendado</div>
+                <article class="planos-card card-highlight card-highlight-secondary">
+                    <span class="card-badge card-badge-secondary">Recomendado</span>
                     <h2>Fofo POWER</h2>
-                    <p>
-                        Para quem decidiu priorizar resultados e performance.
-                    </p>
+                    <p>Para quem decidiu priorizar resultados e performance.</p>
                     <h2>R$ 1.600,00<span>/mês</span></h2>
                     <p>Inclui tudo do Fofo STRONG +</p>
 
@@ -197,18 +218,14 @@
                         <li><i class="fa-solid fa-utensils"></i> Estratégia nutricional mensal adaptada à fase do aluno</li>
                     </ul>
 
-                    <div class="cta-btn">
-                        <a href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20plano%20POWER!" target="_blank">
-                            Quero ser POWER!
-                        </a>
-                    </div>
-                </div>
+                    <a class="cta-btn" href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20plano%20POWER!" target="_blank" rel="noreferrer">
+                        Quero ser POWER!
+                    </a>
+                </article>
 
-                <div class="planos-card">
+                <article class="planos-card">
                     <h2>Fofo ELITE</h2>
-                    <p>
-                        Máximo nível de acompanhamento dentro do método.
-                    </p>
+                    <p>Máximo nível de acompanhamento dentro do método.</p>
                     <h2>R$ 2.000,00<span>/mês</span></h2>
                     <p>Inclui tudo do Fofo POWER +</p>
 
@@ -222,39 +239,31 @@
                         <li><i class="fa-solid fa-utensils"></i> Estratégia alimentar personalizada</li>
                     </ul>
 
-                    <div class="cta-btn">
-                        <a href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20plano%20ELITE!" target="_blank">
-                            Quero ser ELITE!
-                        </a>
-                    </div>
-                </div>
+                    <a class="cta-btn" href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20plano%20ELITE!" target="_blank" rel="noreferrer">
+                        Quero ser ELITE!
+                    </a>
+                </article>
             </div>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem; text-align: center;">
+
+            <p class="partner-note">
                 Parceria nutricional com<br>
-                <a style="text-decoration: none;" 
-                href="https://www.instagram.com/nutriandreiarodrigues/" 
-                target="_blank">
+                <a class="partner-link" href="https://www.instagram.com/nutriandreiarodrigues/" target="_blank" rel="noreferrer">
                     @nutriandreiarodrigues <i class="fa-solid fa-up-right-from-square"></i>
                 </a>
             </p>
 
-            <div class="cta-btn">
-                <a href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20e%20pacotes!" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Quero começar já!
-                </a>
-            </div>
-            
+            <a class="cta-btn" href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20e%20pacotes!" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-whatsapp"></i>
+                Quero começar já!
+            </a>
         </section>
 
-        <section id="consultorias">
+        <section id="consultorias" class="section-shell section-center">
             <h1>Consultorias</h1>
             <div class="planos-cards">
-                <div class="planos-card">
+                <article class="planos-card">
                     <h2>Consultoria Online MENSAL</h2>
-                    <p>
-                        Para quem deseja acompanhamento profissional mesmo à distância.
-                    </p>
+                    <p>Para quem deseja acompanhamento profissional mesmo à distância.</p>
                     <h2>R$ 250,00<span>/mês</span></h2>
                     <p>Treino</p>
                     <ul>
@@ -264,18 +273,14 @@
                         <li><i class="fa-solid fa-calendar-day"></i> Ajustes mensais de treino</li>
                     </ul>
 
-                    <div class="cta-btn">
-                        <a href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20consultoria%20mensal!" target="_blank">
-                            Consultoria de Treino!
-                        </a>
-                    </div>
-                </div>
+                    <a class="cta-btn" href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20consultoria%20mensal!" target="_blank" rel="noreferrer">
+                        Consultoria de Treino!
+                    </a>
+                </article>
 
-                <div class="planos-card">
+                <article class="planos-card">
                     <h2>Consultoria Online BIMESTRAL</h2>
-                    <p>
-                        Para quem quer acompanhamento prolongado.
-                    </p>
+                    <p>Para quem quer acompanhamento prolongado.</p>
                     <h2>R$ 450,00<span>/mês</span></h2>
                     <p>Tudo da Consultoria Online MENSAL +</p>
                     <ul>
@@ -285,18 +290,14 @@
                         <li><i class="fa-solid fa-comments"></i> Suporte via WhatsApp</li>
                     </ul>
 
-                    <div class="cta-btn">
-                        <a href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20consultoria%20bimestral!" target="_blank">
-                            Consultoria Prolongada!
-                        </a>
-                    </div>
-                </div>
+                    <a class="cta-btn" href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20consultoria%20bimestral!" target="_blank" rel="noreferrer">
+                        Consultoria Prolongada!
+                    </a>
+                </article>
 
-                <div class="planos-card">
+                <article class="planos-card">
                     <h2>Consultoria Online + Dieta MENSAL</h2>
-                    <p>
-                        Para quem deseja acompanhamento profissional e nutricional mesmo à distância.
-                    </p>
+                    <p>Para quem deseja acompanhamento profissional e nutricional mesmo à distância.</p>
                     <h2>R$ 450,00<span>/mês</span></h2>
                     <p>Treino + Dieta</p>
                     <ul>
@@ -310,19 +311,15 @@
                         <li><i class="fa-brands fa-nutritionix"></i> Dieta prescrita por nutricionista</li>
                     </ul>
 
-                    <div class="cta-btn">
-                        <a href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20consultoria%20e%20dieta%20mensal!" target="_blank">
-                            Consultoria e Dieta!
-                        </a>
-                    </div>
-                </div>
+                    <a class="cta-btn" href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20consultoria%20e%20dieta%20mensal!" target="_blank" rel="noreferrer">
+                        Consultoria e Dieta!
+                    </a>
+                </article>
 
-                <div class="planos-card destaque">
-                    <div class="badge">Mais escolhido</div>
+                <article class="planos-card card-highlight card-highlight-primary">
+                    <span class="card-badge card-badge-primary">Mais escolhido</span>
                     <h2>Consultoria Online BIMESTRAL</h2>
-                    <p>
-                        Para quem deseja uma verdadeira transformação.
-                    </p>
+                    <p>Para quem deseja uma verdadeira transformação.</p>
                     <h2>R$ 650,00<span>/mês</span></h2>
                     <p>Tudo da Consultoria Online + Dieta MENSAL +</p>
                     <ul>
@@ -333,33 +330,55 @@
                         <li><i class="fa-solid fa-comments"></i> Suporte via WhatsApp</li>
                     </ul>
 
-                    <div class="cta-btn">
-                        <a href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20consultoria%20e%20dieta%20bimestral!" target="_blank">
-                            Consultoria Completa!
-                        </a>
-                    </div>
-                </div>
+                    <a class="cta-btn" href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20consultoria%20e%20dieta%20bimestral!" target="_blank" rel="noreferrer">
+                        Consultoria Completa!
+                    </a>
+                </article>
             </div>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem; text-align: center;">
+
+            <p class="partner-note">
                 Parceria nutricional com<br>
-                <a style="text-decoration: none;" 
-                href="https://www.instagram.com/nutriandreiarodrigues/" 
-                target="_blank">
+                <a class="partner-link" href="https://www.instagram.com/nutriandreiarodrigues/" target="_blank" rel="noreferrer">
                     @nutriandreiarodrigues <i class="fa-solid fa-up-right-from-square"></i>
                 </a>
             </p>
 
-            <div class="cta-btn">
-                <a href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20e%20pacotes!" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Começar meu planejamento!
-                </a>
+            <a class="cta-btn" href="https://wa.me/5511964618676?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20e%20pacotes!" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-whatsapp"></i>
+                Começar meu planejamento!
+            </a>
+        </section>
+
+        <section id="perguntas-frequentes" class="section-shell section-center">
+            <h1>Perguntas Frequentes</h1>
+            <div class="faq-lista">
+                <article class="faq-item">
+                    <h2 class="faq-pergunta">Como funciona o acompanhamento presencial?</h2>
+                    <p class="faq-resposta">
+                        O acompanhamento presencial é feito com supervisão direta durante os treinos, com correções técnicas e ajustes conforme sua evolução.
+                    </p>
+                </article>
+
+                <article class="faq-item">
+                    <h2 class="faq-pergunta">A consultoria online serve para iniciantes?</h2>
+                    <p class="faq-resposta">
+                        Sim. A estrutura pode ser adaptada ao seu nível atual, rotina e objetivo, com planejamento progressivo e acompanhamento ao longo do período.
+                    </p>
+                </article>
+
+                <article class="faq-item">
+                    <h2 class="faq-pergunta">Os treinos são personalizados para cada aluno?</h2>
+                    <p class="faq-resposta">
+                        Sim. Cada treino é pensado de acordo com meta, condicionamento, limitações, disponibilidade e fase atual do aluno.
+                    </p>
+                </article>
             </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2026 Romulo Martins - Personal Trainer.</p>
-        <p>Desenvolvido por <a href="https://www.linkedin.com/in/lucasfgarcez/" target="_blank">Lucas Garcez</a></p>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/lucasfgarcez/" target="_blank" rel="noreferrer">Lucas Garcez</a></p>
     </footer>
 </body>
 </html>
