@@ -81,13 +81,27 @@
 
         <section id="resultados" class="section-shell section-center">
             <h1>Resultados dos Fofos</h1>
-            <div class="resultados-imagens">
-                <div class="resultados-imagem">
-                    <img src="src/images/resultados1.jpeg" alt="Resultado de aluna atendida por Rômulo Martins">
+            <div class="resultados-carousel" data-carousel>
+                <button class="resultados-nav resultados-nav-prev" type="button" aria-label="Ver resultados anteriores">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="resultados-imagens">
+                    <div class="resultados-imagem">
+                        <img src="src/images/resultados1.jpeg" alt="Resultado de aluna atendida por Romulo Martins">
+                    </div>
+                    <div class="resultados-imagem">
+                        <img src="src/images/resultados2.jpeg" alt="Resultado de aluno atendido por Romulo Martins">
+                    </div>
+                    <div class="resultados-imagem">
+                        <img src="src/images/resultados3.jpeg" alt="Antes e depois de aluna atendida por Romulo Martins">
+                    </div>
+                    <div class="resultados-imagem">
+                        <img src="src/images/resultados4.jpeg" alt="Antes e depois de aluna atendida por Romulo Martins">
+                    </div>
                 </div>
-                <div class="resultados-imagem">
-                    <img src="src/images/resultados2.jpeg" alt="Resultado de aluno atendido por Rômulo Martins">
-                </div>
+                <button class="resultados-nav resultados-nav-next" type="button" aria-label="Ver mais resultados">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
             <a class="cta-btn" href="#planos">Quero resultados assim!</a>
         </section>
@@ -411,5 +425,23 @@
         <p>&copy; 2026 Romulo Martins - Personal Trainer.</p>
         <p>Desenvolvido por <a href="https://www.linkedin.com/in/lucasfgarcez/" target="_blank" rel="noreferrer">Lucas Garcez</a></p>
     </footer>
+
+    <script>
+      document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+        const track = carousel.querySelector('.resultados-imagens');
+        const prev = carousel.querySelector('.resultados-nav-prev');
+        const next = carousel.querySelector('.resultados-nav-next');
+
+        if (!track || !prev || !next) return;
+
+        const scrollByPage = (direction) => {
+          const amount = track.clientWidth * 0.92;
+          track.scrollBy({ left: amount * direction, behavior: 'smooth' });
+        };
+
+        prev.addEventListener('click', () => scrollByPage(-1));
+        next.addEventListener('click', () => scrollByPage(1));
+      });
+    </script>
 </body>
 </html>
